@@ -3,7 +3,7 @@
 const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const currentDate = new Date();
 const currentDay = daysOfWeek[currentDate.getUTCDay()];
-// const currentUTCTime = currentDate.toUTCString().substr(11, 8);
+const currentUTCTime = currentDate.toISOString().substr(11, 8);
 
 
 // Update the content of the elements with data-testid attributes
