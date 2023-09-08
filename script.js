@@ -24,10 +24,10 @@ const myGitHubLink = "https://github.com/Pasky2/HNG-task-one.git";
 
 //Updating HTML contents
 userName.textContent = `Slack Name: ${myName}`;
-profilePicture.src = "assets/pascal.jpg";
-profilePicture.alt = myName;
+profilePicture.setAttribute("src", "assets/pascal.jpg");
+profilePicture.setAttribute("alt", myName);
 track.textContent = `Track: ${myTrack}`;
-gitHubLink.href = `${myGitHubLink}`;
+gitHubLink.setAttribute("href", myGitHubLink);
 today.textContent = `Current Day: ${currentDay}`;
 currentTime.textContent = `Current UTC Time: ${currentUTCTime}`;
 
