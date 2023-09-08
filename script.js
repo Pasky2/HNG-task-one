@@ -3,7 +3,9 @@
 const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const currentDate = new Date();
 const currentDay = daysOfWeek[currentDate.getUTCDay()];
-const currentUTCTime = currentDate.toISOString().substr(11, 8);
+// const currentUTCTime = currentDate.toISOString().substr(11, 8);
+const currentUTCTime = currentDate.getTime();
+
 
 
 // Update the content of the elements with data-testid attributes
@@ -27,5 +29,5 @@ profilePicture.alt = myName;
 track.textContent = `Track: ${myTrack}`;
 gitHubLink.href = `${myGitHubLink}`;
 today.textContent = `Current Day: ${currentDay}`;
-currentTime.textContent = `Current UTC Time: ${currentUTCTime} UTC`;
+currentTime.textContent = `Current UTC Time: ${currentUTCTime}`;
 
