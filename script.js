@@ -18,7 +18,7 @@ const currentTime = document.querySelector('[data-testid="currentUTCTime"]');
 
 const myName = "Osemene Pascal";
 const myTrack = "Frontend";
-const myGitHubLink = "https://github.com/Pasky2";
+const myGitHubLink = "https://github.com/Pasky2/HNG-task-one.git";
 
 //Updating HTML contents
 userName.textContent = `Slack Name: ${myName}`;
